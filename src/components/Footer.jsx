@@ -1,12 +1,12 @@
 import React from 'react';
 
-import '../styles/components/Footer.css';
+import '../styles/components/Footer.scss';
 
 const Footer = () => {
   return (
     <footer className="Footer">
-      <p className="Footer-title">Platzi conf merch</p>
-      <p className="Footer-copy">todos los izquierdos reservados</p>
+      <h1 className="Footer-title"> Hamburgueseria los pintos</h1>
+      <h2 className="Footer-copy">todos los izquierdos reservados</h2>
     </footer>
   );
 };

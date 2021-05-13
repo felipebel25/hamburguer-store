@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+import about from '../containers/about'
 import Home from '../containers/Home';
 import Layout from '../components/Layout';
 import Checkout from '../containers/Checkout';
@@ -20,7 +21,9 @@ const App = () => {
       <BrowserRouter>
           <Layout>
             <Switch>
-              <Route exact path="/" component={Home}></Route>
+              <Route exact path="/" component={about}></Route>
+              <Route exact path="/ordenar" component={Home}></Route>
+
               <Route exact path="/checkout" component={Checkout}></Route>
 
               <Route

@@ -1,0 +1,18 @@
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #642b2c;
+  width: 100vw;
+  height: 8vh;
+}
+.Footer-title {
+  text-decoration: none;
+  color: #df752f;
+  margin-left: 2rem;
+}
+.Footer-copy {
+  text-decoration: none;
+  color: #df752f;
+  margin-right: 5rem;
+}

@@ -7,7 +7,7 @@ const Map = ({data}) =>{
         width: "100%"
     }
     const defaultCenter ={
-        lat: data.lat, lng: data.lng
+        lat: 4.343162, lng: -74.366771
     }
     return(
 
