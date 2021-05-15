@@ -7,7 +7,8 @@ import logo from '../assets/logo.png'
 
   const Header = () => {
   const {state } = useContext(AppContext)
-  console.log(state.cart.length)
+  console.log(state.cart.length);
+  
   const [activo , setActivo] = useState("menuppal")
   
   const handleClick = () =>{

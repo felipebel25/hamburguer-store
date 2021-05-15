@@ -3,7 +3,6 @@ import {Helmet} from 'react-helmet'
 import '../styles/components/About.scss'
 import hamburguer from '../assets/hamburguer.png'
 
-import fondo from '../assets/fondoabout.jpg'
 const about = () =>{
 
     return(
