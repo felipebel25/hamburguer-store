@@ -2,6 +2,9 @@ import React,{useState,useContext} from 'react';
 import { Link } from 'react-router-dom';
 import AppContext from '../context/AppContext'
 import '../styles/components/Header.scss';
+import logo from '../assets/logo.png'
+
+
   const Header = () => {
   const {state } = useContext(AppContext)
   console.log(state.cart.length)
@@ -33,7 +36,12 @@ import '../styles/components/Header.scss';
         <li><a href="#">Opcion 4</a></li>
       </ul>
     </nav>
+    <div className="Header-container">
 
+      <Link to="/">
+        <img src={logo} alt="Logo.png" className="Header-container__image" />
+      </Link>
+    </div>
 
         <Link to="/ordenar">
       <h1 className="Header-title">Ordenar</h1>

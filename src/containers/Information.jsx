@@ -4,9 +4,9 @@ import { useHistory } from 'react-router-dom'
 
 import AppContext from '../context/AppContext'
 
-import '../styles/components/Information.css';
+import '../styles/components/Information.scss';
 
-function Information() {
+function Information() {  
   const {state,addToBuyer} = useContext(AppContext)
   const { cart } = state; 
   const history = useHistory()

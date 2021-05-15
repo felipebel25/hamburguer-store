@@ -2,7 +2,7 @@ import React,{useContext} from 'react';
 import AppContext from '../context/AppContext'
 import { Link } from 'react-router-dom'
 
-import '../styles/components/Checkout.css';
+import '../styles/components/Checkout.scss';
 
 function Checkout() {
   const { state, removeCart } = useContext(AppContext);
@@ -39,7 +39,10 @@ function Checkout() {
           </div>
           {cart.length === 0 &&
              <div className="Checkout-sidebar">
-               <h1>sin pedidos :C</h1>
+               <h1>sin pedidos :C Ordena algo pls</h1>
+                <Link to="/ordenar">
+                  <h1>Ir a productos</h1>
+                </Link>
                </div>
           }
           {cart.length > 0 &&  
