@@ -3,7 +3,7 @@ const Product = ({ product, handlePay }) => {
   return (
     <div>
       <div className="Products-item wrapper">
-        <img src={product.image} alt={product.title} />
+        <img src={`https://hambur.herokuapp.com${product.image[0].url}`} alt="" />
         <div className="Products-item-info">
           <h2>{product.title}</h2>
           <span>$ {product.price}</span>

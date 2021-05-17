@@ -1,8 +1,22 @@
-import React,{useState} from 'react'
+import React,{useState , useEffect} from 'react';
 import initialState from '../initialState'
-
+const API = "https://hambur.herokuapp.com/hamburguesas/"
 const useInitialState = () => {
+    
     const [state, setState]  = useState(initialState)
+    const [products,setProducts] = useState([])
+    
+    useEffect(() => {
+        fetch(API , {
+            method: 'GET',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          })
+            .then(response => response.json())
+            .then(data => setProducts(data));
+    }, [])
+        console.log(products);
 
 
     const addToCart = payload  =>{
@@ -37,6 +51,7 @@ const useInitialState = () => {
         removeCart,
         addToBuyer,
         addNewOrder,
+        products,
         state
     }
 

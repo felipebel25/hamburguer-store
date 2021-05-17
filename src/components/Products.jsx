@@ -4,8 +4,8 @@ import Product from './Product';
 import '../styles/components/Products.scss';
 
 const Products = () => {
-    const {state, addToCart} = useContext(AppContext)
-    const { products } = state;
+    const {products, addToCart} = useContext(AppContext)
+    
     const handlePay = ( product ) =>{
       addToCart(product)
     }

@@ -12,20 +12,22 @@ import Payment from '../containers/Payment';
 import Notfound from '../containers/Notfound';
 
 import AppContext from '../context/AppContext';
+import initialState from '../initialState';
 import useInitialState from '../hooks/useInitialState'
 
 const App = () => {
   const InitialState = useInitialState();
+  const isEmpty = Object.keys(InitialState.state).length;
   return (
-    <AppContext.Provider value={InitialState}>
+    <>
+    {isEmpty > 0 ? (
+      <AppContext.Provider value={InitialState}>
       <BrowserRouter>
           <Layout>
             <Switch>
               <Route exact path="/" component={about}></Route>
               <Route exact path="/ordenar" component={Home}></Route>
-
               <Route exact path="/checkout" component={Checkout}></Route>
-
               <Route
                 exact
                 path="/checkout/information"
@@ -38,8 +40,11 @@ const App = () => {
           </Layout>
         </BrowserRouter>
     </AppContext.Provider>
- 
+    
+    
+    ) : <h1>cargando...</h1>};
+    </>
   );
-};
+}
 
 export default App;
