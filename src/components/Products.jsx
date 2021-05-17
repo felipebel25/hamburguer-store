@@ -1,7 +1,7 @@
 import React,{useContext} from 'react';
 import AppContext from '../context/AppContext'
 import Product from './Product';
-import '../styles/components/Products.scss';
+import '../styles/components/Products/Products.scss';
 
 const Products = () => {
     const {products, addToCart} = useContext(AppContext)

@@ -1,4 +1,4 @@
-@import './general.scss';
+@import '../general.scss';
 
 .Products-items {
   grid-template-columns: repeat(3, 1fr);
@@ -57,5 +57,17 @@
       font-weight: 300;
       color: $color-oscuro;
     }
+  }
+}
+@include media(mobile-only) {
+  .Products-items {
+    display: flex;
+    padding: 0;
+    padding-top: 15rem;
+    flex-direction: column;
+  }
+  .Products-item {
+    padding: 3rem;
+    margin: 0;
   }
 }

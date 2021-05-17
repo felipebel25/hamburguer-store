@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import {PayPalButton} from 'react-paypal-button';
 import AppContext  from '../context/AppContext'
 import handelSuma from '../utils/index'
-import '../styles/components/Payment.scss'
+import '../styles/components/Payment/Payment.scss'
 
 const Payment= () => {
   const {state,addNewOrder} = useContext(AppContext);

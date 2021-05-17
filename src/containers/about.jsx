@@ -1,6 +1,7 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import {Helmet} from 'react-helmet'
-import '../styles/components/About.scss'
+import '../styles/components/Home/About.scss'
 import hamburguer from '../assets/hamburguer.png'
 
 const about = () =>{
@@ -40,6 +41,9 @@ const about = () =>{
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                 </div>
                 <img src={hamburguer} alt="" className="hamburguer-container__image"/>
+              <Link to="/ordenar">
+              <button type="button" className="hamburguer-container__button"> Comprar</button></Link>
+               
             </section>
         </main>
 

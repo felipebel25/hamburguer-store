@@ -1,7 +1,7 @@
 import React,{useState,useContext} from 'react';
 import { Link } from 'react-router-dom';
 import AppContext from '../context/AppContext'
-import '../styles/components/Header.scss';
+import '../styles/components/Header/Header.scss';
 import logo from '../assets/logo.png'
 
 
@@ -31,10 +31,10 @@ import logo from '../assets/logo.png'
       </div>
     <nav className={activo}>
       <ul>
-        <li><a href="#">Opcion 1</a></li>
-        <li><a href="#">Opcion 2</a></li>
-        <li><a href="#">Opcion 3</a></li>
-        <li><a href="#">Opcion 4</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/ordenar">Ordenar</Link></li>
+        <li><Link to="/checkout">Carrito</Link></li>
+        <li><Link to="/checkout/information">Form</Link></li>
       </ul>
     </nav>
     <div className="Header-container">

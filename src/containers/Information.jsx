@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom'
 
 import AppContext from '../context/AppContext'
 
-import '../styles/components/Information.scss';
+import '../styles/components/Information/Information.scss';
 
 function Information() {  
   const {state,addToBuyer} = useContext(AppContext)

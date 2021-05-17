@@ -1,0 +1,17 @@
+@import '../general.scss';
+.Success {
+  width: 100%;
+  height: 80vh;
+  padding: 7%;
+}
+
+@include media(mobile-only) {
+  .Success {
+    height: auto;
+    padding-top: 12rem;
+    h2 {
+      font-size: 1.8rem;
+    }
+    font-size: 2rem;
+  }
+}
