@@ -6,7 +6,6 @@ import logo from '../assets/logo.png';
 
 const Header = () => {
   const { state } = useContext(AppContext);
-  console.log(state.cart.length);
 
   const [activo, setActivo] = useState('menuppal');
 
@@ -20,11 +19,15 @@ const Header = () => {
 
   return (
     <header className="Header">
-      <div className="hamburger" onClick={handleClick}>
+      <div className="hamburger" onClick={handleClick} >
         <div className="_layer -top" />
         <div className="_layer -mid" />
         <div className="_layer -bottom" />
       </div>
+
+
+
+
       <nav className={activo}>
         <ul>
           <li>
@@ -37,19 +40,27 @@ const Header = () => {
             <Link to="/checkout">Carrito</Link>
           </li>
           <li>
-            <Link to="/checkout/information">Form</Link>
+            <Link to="/about">Sobre nosotros</Link>
           </li>
         </ul>
       </nav>
+
+
       <div className="Header-container">
         <Link to="/">
           <img src={logo} alt="Logo.png" className="Header-container__image" />
         </Link>
       </div>
 
+      <Link to="/about">
+        <h1 className="Header-title">Sobre nosotros</h1>
+      </Link>
+
       <Link to="/ordenar">
         <h1 className="Header-title">Ordenar</h1>
       </Link>
+
+
       <div className="Header-checkout">
         <Link to="/checkout">
           <i className="fas fa-shopping-basket"> </i>

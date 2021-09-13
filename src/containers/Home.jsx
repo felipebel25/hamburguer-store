@@ -1,16 +1,15 @@
 import React from 'react';
-import InitialState from '../initialState';
 import { Helmet } from 'react-helmet';
+import InitialState from '../initialState';
 import Products from '../components/Products';
-const Home = () => {
-  return (
+
+const Home = () => (
     <>
       <Helmet>
         <title>Productos - Hamburgruesas</title>
       </Helmet>
-      <Products products={InitialState.products}></Products>
+      <Products products={InitialState.products} />
     </>
   );
-};
 
 export default Home;

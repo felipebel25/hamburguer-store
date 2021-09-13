@@ -4,8 +4,7 @@ import { Helmet } from 'react-helmet';
 import '../styles/components/Home/About.scss';
 import hamburguer from '../assets/hamburguer.png';
 
-const about = () => {
-  return (
+const about = () => (
     <>
       <Helmet>
         <title>Hamburgueseria Los Pintos</title>
@@ -36,8 +35,9 @@ const about = () => {
       <main className="About">
         <section className="hamburguer-container">
           <div className="hamburguer-container__txt">
-            <h1>Hamburgueseria como seria</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <h1>Hamburgueseria los Pintos</h1>
+            <p>¡Deliciosas 
+              Hamburguesas! </p>
           </div>
           <img
             src={hamburguer}
@@ -54,6 +54,5 @@ const about = () => {
       </main>
     </>
   );
-};
 
 export default about;

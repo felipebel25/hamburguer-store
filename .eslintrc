@@ -4,7 +4,9 @@
       "prettier"
     ],
     "plugins": [
-      "prettier"
+      "prettier",
+      "styled-components-a11y",
+      "plugin:styled-components-a11y/recommended"
     ],
     "rules": {
       "react/jsx-filename-extension": [
@@ -22,7 +24,8 @@
         "error",
         "absolute-first"
       ],
-      "import/newline-after-import": "error"
+      "import/newline-after-import": "error",
+      "styled-components-a11y/rule-name": 2
     },
     "globals": {
       "window": true,

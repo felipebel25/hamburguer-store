@@ -3,11 +3,13 @@
 .Header {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 100vw;
   height: 10vh;
   justify-content: center;
   align-items: center;
   background-color: $color-fondo1;
+  position: fixed;
+  z-index: 2;
   a {
     text-decoration: none;
     color: $color-letra;
@@ -16,7 +18,7 @@
   &-container {
     &__image {
       width: 18rem;
-      height: auto;
+      height: 50%;
       position: relative;
       top: 5em;
       right: 8%;
@@ -51,14 +53,14 @@
 @include media(mobile-only) {
   .Header {
     &-container {
-      width: 100%;
+      width: 100vw;
       &__image {
-        width: 60%;
+        width: 40%;
         height: auto;
         position: relative;
-        top: 6em;
+        top: 2em;
         right: 0;
-        left: 29.333%;
+        left: 40.333%;
       }
     }
     &-checkout {

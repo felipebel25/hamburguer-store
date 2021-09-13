@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import AppContext from '../context/AppContext';
 import { Link } from 'react-router-dom';
+import AppContext from '../context/AppContext';
 
 import '../styles/components/Checkout/Checkout.scss';
 
@@ -31,7 +31,7 @@ function Checkout() {
                 <span> ${item.price}</span>
               </div>
               <button type="button" onClick={handleRemove(item, index)}>
-                <i className="fas fa-trash-alt"></i>
+                <i className="fas fa-trash-alt" />
               </button>
             </div>
           ))}

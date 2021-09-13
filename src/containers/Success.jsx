@@ -15,7 +15,7 @@ const Success = () => {
       <div className="Success">
         <div className="Success-content">
           <h2>Gracias por tu compra</h2>
-          <span>{`tu pedido llegara pronto ${buyer[0].name} `}</span>
+          <span>{`tu pedido llegara pronto ${buyer[0].name}`}</span>
           <div className="Success-map">
             <Map data={location}></Map>
           </div>

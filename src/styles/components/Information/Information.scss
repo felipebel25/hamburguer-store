@@ -6,10 +6,12 @@
   display: grid;
   margin: 0 0 4em 0;
   width: 100%;
-  padding-top: 9%;
+  padding-top: 12%;
   padding-left: 7%;
   height: 90vh;
   margin: 0 auto;
+  overflow: scroll;
+
 }
 .Information-buttons {
   display: flex;
@@ -17,6 +19,7 @@
   align-items: center;
 }
 .Information-sidebar {
+
   margin: 10px 0 0 0;
   h3 {
     font-size: 3rem;
@@ -106,7 +109,7 @@ input {
     display: flex;
     flex-direction: column;
     height: auto;
-    overflow-y: visible;
+    overflow: visible;
     padding-top: 13rem;
   }
   input {
@@ -125,5 +128,11 @@ input {
     span {
       font-size: 2rem;
     }
+  }
+  .Information-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2rem;
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 const Product = ({ product, handlePay }) => {
   return (
-    <div>
+    <>
       <div className="Products-item wrapper">
         <img src={product.image} alt="" />
         <div className="Products-item-info">
@@ -14,7 +14,7 @@ const Product = ({ product, handlePay }) => {
           Añadir al carrito{' '}
         </button>
       </div>
-    </div>
+    </>
   );
 };
 
