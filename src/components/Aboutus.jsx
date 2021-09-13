@@ -14,7 +14,7 @@ const Aboutus = (props) => {
         onMouseLeave={() => setVisible(false)}>
                 <h1>{props.title}</h1>
                 <p>{props.information}</p>
-                <Imagen hidden={visible}src={props.srcImg}></Imagen>
+                <Imagen src={props.srcImg}></Imagen>
                 <Button
                      >
                                 ver mas

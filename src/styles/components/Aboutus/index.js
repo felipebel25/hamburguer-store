@@ -4,7 +4,7 @@ import { css } from 'styled-components';
 
 export const Button = styled.button`
   width: 30%;
-  height: 4%;
+  height: 1%;
   color: white;
   background-color: #491c09;
   font-size: 1em;
@@ -13,7 +13,7 @@ export const Button = styled.button`
   border: none;
   display: block;
   @media (max-width: 860px) {
-    height:40%;
+    height:10%;
    
   }
  
@@ -21,7 +21,7 @@ export const Button = styled.button`
 
 export const Main = styled.main`
   display: flex;
-  height: 100vh;
+  height: auto;
   width: 100%;
   
   @media (max-width: 860px) {
@@ -29,7 +29,7 @@ export const Main = styled.main`
     flex-direction: column;
     width: 100%;
     padding-top: 10.5rem;
-    height: 90vh;
+    height: 200vh;
     overflow: scroll;
     
   }
@@ -46,9 +46,7 @@ export const Box = styled.div`
   border: 2px solid #fbe3b3;
   border-top: none;
   text-align: center;
-  ${props => props.hidden === true  && css `
-    width: 150%;
- `}
+ 
   
   p{
     display:none;
@@ -61,7 +59,14 @@ export const Box = styled.div`
     }
     h1{
       border-bottom: 3px solid #491c09;
-  }
+      font-size:2.7rem;
+    }
+    img{
+      display: block;
+      width: 90%;
+      height: auto;
+      padding: 0;
+    }
   }
   @media (max-width: 860px) {
     height:100%;
@@ -72,6 +77,12 @@ export const Box = styled.div`
     button{
       display: none;
     }
+    img{
+      display: block;
+      width: 90%;
+      height: auto;
+      padding: 0;
+    }
  `}
   }
 
@@ -80,22 +91,21 @@ export const Box = styled.div`
 export const Imagen = styled.img`
     width: 100%;
     display: none;
-   ${props => props.hidden === true  && css `
-      display: block;
-      width: 100%;
-      padding: 2rem;
+   &:hover{
 
- `}
+
+   }
  @media (max-width: 860px) {
     height:100%;
-    ${props => props.hidden === true  && css `
-    display: block;
+  
+      &:hover{
 
-    width: 90%;
-    height: auto;
-    padding: 0;
-    
- `}
+      display: block;
+
+      width: 90%;
+      height: auto;
+      padding: 0;
+      }
   }
 
 `
