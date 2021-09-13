@@ -4,7 +4,7 @@ import { css } from 'styled-components';
 
 export const Button = styled.button`
   width: 30%;
-  height: 1%;
+  height: 3%;
   color: white;
   background-color: #491c09;
   font-size: 1em;
@@ -12,6 +12,7 @@ export const Button = styled.button`
   border-radius: 3px;
   border: none;
   display: block;
+ 
   @media (max-width: 860px) {
     height:10%;
    
@@ -21,7 +22,9 @@ export const Button = styled.button`
 
 export const Main = styled.main`
   display: flex;
-  height: auto;
+  flex-direction: row;
+  
+  height: 100vh;
   width: 100%;
   
   @media (max-width: 860px) {
@@ -59,7 +62,7 @@ export const Box = styled.div`
     }
     h1{
       border-bottom: 3px solid #491c09;
-      font-size:2.7rem;
+      font-size: 2.7rem;
     }
     img{
       display: block;
@@ -67,6 +70,13 @@ export const Box = styled.div`
       height: auto;
       padding: 0;
     }
+  }
+  ${props => props.hidden === true  && css `
+   
+    button{
+      display: none;
+    }
+    `
   }
   @media (max-width: 860px) {
     height:100%;
@@ -91,10 +101,7 @@ export const Box = styled.div`
 export const Imagen = styled.img`
     width: 100%;
     display: none;
-   &:hover{
-
-
-   }
+  
  @media (max-width: 860px) {
     height:100%;
   
