@@ -6,5 +6,5 @@ _Hecho en react.js usando hooks usa paypal fetch a una api de strapi diseño res
 [App](https://hamburguer-store.firebaseapp.com/) deploy con firebase 
 =======
 
-![Link](https://hamburguer-store.firebaseapp.com/)
->>>>>>> 4d5fc691c35af37710a160bd6ad5dcce70f67652
+[https://hamburguer-store.firebaseapp.com/](https://hamburguer-store.firebaseapp.com/)
+
